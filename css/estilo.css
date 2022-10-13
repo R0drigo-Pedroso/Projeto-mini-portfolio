@@ -39,6 +39,8 @@ body {
     width: 370px;
     border: 2px solid #214E34;
 
+    box-shadow: 1px 1px 100px white;
+
     border-radius: 10px;
 
     overflow: hidden;
@@ -86,9 +88,12 @@ body {
     justify-content: center;
     padding: 10px 0;
     cursor: pointer;
+    border-top: 2px solid #214E34;
 
     transition: background-color 0.2 ease-in-out;
+    
 }
+
 
 .cartao .abas img {
     width: 30px;
@@ -132,7 +137,7 @@ body {
 }
 
 article span {
-    color: #214E34;
+    color: #f3f3f3;
 }
 
 .redes-sociais {
@@ -143,6 +148,10 @@ article span {
 
     max-height: 180px;
     overflow-y: auto;
+}
+
+.sub-titulo {
+    color: white;
 }
 
 .redes-sociais li a{
