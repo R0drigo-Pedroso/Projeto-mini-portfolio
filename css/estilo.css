@@ -24,7 +24,7 @@ body {
     background: url(../img/noirlac.png);
     
     font-family: 'VT323', monospace;
-    color: white;
+    color: #011638;
     font-size: 18px;
 
     display: flex;
@@ -63,6 +63,7 @@ body {
 
 .cartao .minhas-informacoes .nome {
     font-size: 26px;
+    color: white;
 }
 
 .cartao .minhas-informacoes .cargo {
@@ -130,8 +131,8 @@ body {
     padding-right: 15px;
 }
 
-.informacao-abas .descricao span {
-    color: #02d08f;
+article span {
+    color: #214E34;
 }
 
 .redes-sociais {
