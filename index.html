@@ -1,76 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-bt">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Mapa Dev Week</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Mini projeto de Portfólio">
+    <meta name="keywords" content="Projeto, Portfólio, Currículo, desenvolvedores, Desenvolvedor front end, estudando">
+
+    <!-- Css proprio -->
     <link rel="stylesheet" href="css/estilo.css">
 
+    <title>Mini Portfólio - Rodrigo Pedroso</title>
 </head>
 
 <body>
     <main class="cartao">
         <section class="minhas-informacoes">
-            <img src="img/perfil.png" alt="Foto de Perfil">
+            <img src="img/perfil.png" alt="foto de perfil" />
             <h1 class="nome">Rodrigo Pedroso</h1>
             <h2 class="cargo">Desenvolvedor Frontend Júnior</h2>
         </section>
 
-        <section class="conteudo">
+        <nav class="conteudo">
             <ul class="abas">
-                <li class="aba selecionado">
-                    <img src="img/sobre.gif" alt="icone de sobre mim">
+                <li class="aba selecionado" id="sobre-mim">
+                    <img src="img/sobre.gif" alt="ícone de sobre mim" />
                 </li>
-
-                <li class="aba">
-                    <img src="img/coracao.gif" alt="icone de redes socias">
+                <li class="aba" id="minhas-redes">
+                    <img src="img/coracao.gif" alt="ícone de redes sociais" />
                 </li>
             </ul>
 
             <section class="informacoes-abas">
-                <section class="informacao selecionado">
+                <section class="informacao selecionado" id="informacao-sobre-mim">
                     <h3 class="sub-titulo">Sobre</h3>
 
-                    <article class="descricao">
-                        <p>Oi, meu nome é Rodrigo Pedroso, seja bem-vindo(a)!</p>
+                    <div class="descricao">
+                        <p>Oi! meu nome é Rodrigo da Silva, seja bem-vindo(a)!</p>
 
                         <p>
                             Tenho 30 anos, moro em São Paulo/SP e adoro programação e desenvolver aplicações web. Sou iniciante nesse mundo gigante de
                             desenvolvedores e programadores, sempre buscando novos conhecimento e desafios! 😆
                             Atualmente estou estudando o curso de Técnico em informática para internet no Senac Penha, e estou aprendendo a
-                            desenvolver
-                            aplicações web. Tendo contato com as Tecnologias <span> HTML, CSS, Bootstrap, Figma, JavaScript, PHP, MySQL </span>, e
-                            sempre
-                            adquirindo mais
-                            conhecimento para desenvolver aplicações web.
+                            desenvolver aplicações web. Tendo contato com as Tecnologias <span> HTML, CSS, Bootstrap, Figma, JavaScript, PHP, MySQL e
+                                React.js </span> e sempre
+                            adquirindo mais conhecimento para desenvolver aplicações web.
                         </p>
-                    </article>
+                    </div>
                 </section>
 
-
-                <section class="informacao">
+                <section class="informacao" id="informacao-minhas-redes">
                     <h3 class="sub-titulo">Minhas redes</h3>
 
                     <ul class="redes-sociais">
                         <li>
-                            <a href="#" target="_blank" class="curriculo">Curriculo</a>
+                            <a href="https://drive.google.com/file/d/1q2BiX0ElUXjsAJ_PEXLj6MQJyPPlCRXd/view?usp=sharing" target="_blank"
+                                class="curriculo">Currículo</a>
                         </li>
-
                         <li>
-                            <a href="#" target="_blank" class="linkdin">LinkdIn</a>
+                            <a href="https://www.linkedin.com/in/rodrigo-pedros0/" target="_blank" class="linkedin">LinkedIn</a>
                         </li>
-
                         <li>
-                            <a href="#" target="_blank" class="github">GitHub</a>
+                            <a href="https://github.com/R0drigo-Pedroso" target="_blank" class="github">GitHub</a>
                         </li>
                     </ul>
                 </section>
-            </section>
 
-        </section>
+            </section>
+        </nav>
     </main>
+
+    <script src="js/index.js"></script>
 </body>
 
 </html>

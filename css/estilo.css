@@ -1,7 +1,8 @@
 /* Reset */
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
-*, *::after, *::before {
+/* Reset */
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,22 +12,44 @@ ul{
     list-style: none;
 }
 
-a {
+a{
     text-decoration: none;
-    color: black;
+    color: #000;
 }
 /* Final Reset */
 
+/* Rolagem */
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #0888f0 #011638 ;
+    }
 
-/* Estilização */
+    /* Works on Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+        width: 12px;
+    }
 
-body {
-    background: url(../img/noirlac.png);
-    
+    *::-webkit-scrollbar-track {
+        background: #070d12;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: #e228d8;
+        border-radius: 20px;
+        border: 3px solid #070d12;
+    }
+/* Final Rolagem */
+
+/* Aplicação  */
+body{
+    background-image: url(../img/pexels-alena-darmel-7862491.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
     font-family: 'VT323', monospace;
-    color: #011638;
+    color: #fff;
     font-size: 18px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,23 +57,19 @@ body {
     padding: 30px;
 }
 
-.cartao {
-    background-color: #011638;
+h1 {
+    color:#011638;
+}
+
+.cartao{
+    background-color: #54c6eb;
     width: 370px;
-    border: 2px solid #214E34;
-
-    box-shadow: 1px 1px 100px white;
-
+    border: 2px solid #02d08f;
     border-radius: 10px;
-
     overflow: hidden;
 }
 
-.abas img{
-    width: 30px;
-}
-
-.cartao .minhas-informacoes {
+.cartao .minhas-informacoes{
     padding-top: 20px;
     display: flex;
     flex-direction: column;
@@ -58,126 +77,111 @@ body {
     gap: 10px;
 }
 
-.cartao .minhas-informacoes img {
+.cartao .minhas-informacoes img{
     border-radius: 50px;
-    border: 4px solid #02d08f;
+    border: 4px solid #02d08f;    
 }
 
-.cartao .minhas-informacoes .nome {
+.cartao .minhas-informacoes .nome{
     font-size: 26px;
-    color: white;
 }
 
-.cartao .minhas-informacoes .cargo {
+.cartao .minhas-informacoes .cargo{
     font-size: 20px;
-    color: #b8bbc5;
+    color: #214e34;
 }
 
-.cartao .conteudo {
-    background-color: #FFC482;
+.cartao .conteudo{
     margin-top: 15px;
 }
 
-.cartao .abas {
+.cartao .abas{
     display: flex;
 }
 
-.cartao .abas .aba {
+.cartao .abas .aba{
     width: 50%;
     display: flex;
     justify-content: center;
     padding: 10px 0;
     cursor: pointer;
-    border-top: 2px solid #214E34;
-
-    transition: background-color 0.2 ease-in-out;
-    
+    transition: background-color 0.2s ease-in-out;
 }
 
-
-.cartao .abas img {
+.cartao .abas img{
     width: 30px;
 }
 
-.cartao .abas .aba.selecionado {
-    background-color: #54C6EB;
+.cartao .abas .aba.selecionado{
+    background-color: #011638;
 }
 
-.cartao .informacoes-abas {
-    background-color: #54C6EB;
+.cartao .informacoes-abas{
+    background-color: #011638;
 }
 
-.cartao .abas .aba:hover {
-    background-color: #ffd5a4;
+.cartao .abas .aba:hover{
+    background-color: #011638;;
 }
 
-.informacoes-abas .informacao {
+.informacoes-abas .informacao{
     min-height: 260px;
     padding: 15px;
-    
     display: none;
 }
 
-.informacoes-abas .informacao.selecionado {
+.informacoes-abas .informacao.selecionado{
     display: block;
 }
 
-
-.informacoes-abas .sub-titulo {
+.informacoes-abas .sub-titulo{
     font-size: 22px;
     margin-bottom: 25px;
     text-align: center;
 }
 
-.informacao-abas .descricao {
+.informacoes-abas .descricao{
     font-size: 20px;
-    max-width: 180px;
+    max-height: 180px;
     overflow-y: auto;
     padding-right: 15px;
 }
 
-article span {
-    color: #f3f3f3;
+.informacoes-abas .descricao span{
+    color: #ffc482;
 }
 
-.redes-sociais {
+.redes-sociais{
     display: flex;
     flex-direction: column;
     gap: 25px;
     align-items: center;
-
     max-height: 180px;
     overflow-y: auto;
 }
 
-.sub-titulo {
-    color: white;
-}
-
-.redes-sociais li a{
-    background-color: #b8bbc5;
+.redes-sociais li a{    
     width: 250px;
     display: block;
     color: #f3f3f3;
     text-align: center;
     padding: 10px;
     font-size: 20px;
-
     transition: opacity 0.3s ease-in-out;
 }
 
-.redes-sociais li a:hover {
+.redes-sociais li a:hover{
     opacity: 0.8;
 }
 
-.redes-sociais .curriculo {
-    background-color:#45CB85;
+.redes-sociais .curriculo{
+    background-color: #02d08f;
 }
 
-.redes-sociais .linkdin {
-    background-color: #1d87bd;
+.redes-sociais .linkedin{
+    background-color: #54c6eb;
 }
 
-.redes-sociais .github {
-    background-color: #153131;
+.redes-sociais .github{
+    background-color: #214e34;
 }
